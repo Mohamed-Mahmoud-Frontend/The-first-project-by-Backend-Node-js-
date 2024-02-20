@@ -1,4 +1,5 @@
 const http = require('http')
+// create server py node js
 http.createServer(function(req, res ){
 res.writeHead(200,{'Content-Type':'text/html'})//header
 res.end(`<h1> welcome to my server and the first server create by node js (Backend developer)</h1>`) //body
