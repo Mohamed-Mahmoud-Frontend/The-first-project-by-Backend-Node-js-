@@ -47,9 +47,20 @@ fs = file system
 5-read (fs.open)
 */
 
-fs.appendFile("newfile.html", "Hello world", function () {
+fs.appendFile("newfile2.html", "Hello worldddddddd", function () {
   console.log("Done");
 });
-fs.open("newfile.html", "a", function(err){
-console.log(arguments)
+
+fs.open("newfile1.html","hello mohamed", function () {
+  console.log("Done");
+});
+fs.appendFile("newfile3.html" , "hello world", function () {
+  console.log("Done");
+});
+fs.open("newfile3.html", "a", function(err){
+  console.log(arguments)
+})
+fs.unlink("newfile3.html",function(){
+  console.log("Done");
+
 })
